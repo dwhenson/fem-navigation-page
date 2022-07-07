@@ -1,0 +1,47 @@
+/*  Custom Properties
+    ================================================== */
+
+:root {
+  /* Common colors */
+  --clr-primary-100: rgb(213, 150, 108);
+  --clr-neutral-100: rgb(255, 255, 255);
+  --clr-neutral-220: rgb(68, 68, 68);
+  --clr-neutral-300: rgb(21, 21, 21);
+
+  /* Spacing */
+  --space-xxs: clamp(0.56rem, calc(0.54rem + 0.09vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.85rem + 0.09vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1.08rem + 0.19vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.62rem + 0.28vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2.16rem + 0.38vw), 2.5rem);
+  --space-xl: clamp(3.38rem, calc(3.24rem + 0.56vw), 3.75rem);
+  --space-xxl: clamp(4.5rem, calc(4.32rem + 0.75vw), 5rem);
+
+  /* Font styles */
+  --ff-headings: "Big Shoulders Display", "Brush Script MT", "cursive";
+  --ff-body: "Outfit", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
+  /* Font sizes */
+  --step--1: clamp(0.9rem, calc(0.79rem + 0.45vw), 1.2rem);
+  --step-0: clamp(1.13rem, calc(0.99rem + 0.56vw), 1.5rem);
+  --step-1: clamp(1.41rem, calc(1.24rem + 0.7vw), 1.88rem);
+  --step-2: clamp(1.76rem, calc(1.55rem + 0.88vw), 2.34rem);
+  --step-3: clamp(2.2rem, calc(1.94rem + 1.1vw), 2.93rem);
+  --step-4: clamp(2.75rem, calc(2.42rem + 1.37vw), 3.66rem);
+  --step-5: clamp(3.43rem, calc(3.03rem + 1.72vw), 4.58rem);
+  --step-6: clamp(4.29rem, calc(3.79rem + 2.15vw), 5.72rem);
+
+  /* Box shadow */
+  --shadow-color: 68, 68, 68;
+  /* prettier-ignore */
+  --shadow-elevation-low:
+    0.3px 0.5px 0.8px rgba(var(--shadow-color, 7, 0%, 14%), 0.14),
+    0.6px 1px 1.6px -0.5px rgba(var(--shadow-color, 7, 0%, 14%), 0.28),
+    1.2px 2.1px 3.3px -1px rgba(var(--shadow-color, 7, 0%, 14%), 0.42);
+  /* prettier-ignore */
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.8px rgba(var(--shadow-color, 7, 0%, 14%), 0.15),
+    1.3px 2.3px 3.6px -0.3px rgba(var(--shadow-color, 7, 0%, 14%), 0.26),
+    2.8px 4.9px 7.6px -0.7px rgba(var(--shadow-color, 7, 0%, 14%), 0.36),
+    6.1px 10.7px 16.6px -1px rgba(var(--shadow-color, 7, 0%, 14%), 0.47);
+}

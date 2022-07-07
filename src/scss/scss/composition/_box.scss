@@ -1,0 +1,14 @@
+/* Add basic box layout and colors */
+.box {
+  --color-bg: var(--clr-neutral-300);
+  --color-fg: var(--clr-neutral-100);
+
+  padding-block: var(--padding-block, var(--space-s, 1rem));
+  padding-inline: var(--padding-inline, var(--space-m, 1.5rem));
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+.box * {
+  color: inherit;
+}

@@ -1,0 +1,34 @@
+.button {
+  --padding-block: 0;
+  --padding-inline: 0;
+
+  display: inline-flex;
+  max-inline-size: fit-content;
+  font-family: var(--ff-headings);
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  .text {
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-s);
+    transition: background 300ms ease-in-out;
+  }
+
+  .arrow {
+    display: grid;
+    place-items: center;
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-s);
+    background-color: var(--clr-primary-100);
+    transition: background 300ms ease-in-out;
+  }
+
+  &:hover .text {
+    background-color: var(--clr-primary-100);
+  }
+
+  &:hover .arrow {
+    background-color: var(--color-bg);
+  }
+}

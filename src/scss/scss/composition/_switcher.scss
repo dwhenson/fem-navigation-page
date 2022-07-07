@@ -1,0 +1,17 @@
+/* Switch from column to row - no intermidiate state  */
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--bespoke-gap, var(--space-s, 1rem));
+
+  > * {
+    flex-basis: calc((var(--min-basis, 30rem) - 100%) * 999);
+    flex-grow: 1;
+  }
+
+  // Force equal spacing if >5 flex items
+  > :nth-last-child(n + 5),
+  > :nth-last-child(n + 5) ~ * {
+    flex-basis: 100%;
+  }
+}

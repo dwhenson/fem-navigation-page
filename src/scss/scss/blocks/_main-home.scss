@@ -1,0 +1,21 @@
+.home .main {
+  --flow-space: var(--space-l);
+  --bespoke-gap: var(--space-l);
+
+  img {
+    object-fit: cover;
+  }
+
+  .has-sidebar {
+    --flow-space: var(--step-1);
+    --side-size: 25rem;
+
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+
+  .has-sidebar-reverse {
+    --flow-space: var(--step-1);
+    --main-size: 22rem;
+  }
+}

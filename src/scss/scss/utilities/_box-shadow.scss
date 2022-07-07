@@ -1,0 +1,6 @@
+/* Add left and right padding to element */
+.container {
+  position: relative;
+  inline-size: min(100vw - 2rem, var(--container-max, 100%));
+  margin-inline: auto;
+}

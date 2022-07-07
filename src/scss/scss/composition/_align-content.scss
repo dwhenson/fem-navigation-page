@@ -1,0 +1,14 @@
+.align-content {
+  --min: var(--space-m);
+  --container-max: 1440px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--min, 1rem), 1fr)
+    minmax(320px, 1440px)
+    minmax(var(--min, 1rem), 1fr);
+
+  > * {
+    grid-column: 2;
+  }
+}

@@ -1,0 +1,17 @@
+.location .header {
+  position: relative;
+  grid-column: 1 / -1;
+
+  .button {
+    position: absolute;
+  }
+
+  .map-wrapper {
+    .map {
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../abstracts/breakpoints" as *;
+
+.footer {
+  --padding-block: var(--space-xl);
+
+  grid-column: 1 / -1;
+
+  .switcher {
+    --min-basis: 35rem;
+    --bespoke-gap: var(--space-xxl);
+
+    justify-content: space-between;
+
+    > p {
+      flex-grow: 2;
+      min-inline-size: min(25rem, 100%);
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--space-s);
+
+    @include respond-to("medium") {
+      justify-content: flex-end;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}

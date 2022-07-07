@@ -1,0 +1,95 @@
+@use "reset";
+@use "abstracts/variables";
+
+/* ==================================================
+Composition
+================================================== */
+
+@use "composition/align-content";
+@use "composition/box";
+@use "composition/container";
+@use "composition/flow-content";
+@use "composition/flow-section";
+@use "composition/reverse-sidebar";
+@use "composition/sidebar";
+@use "composition/switcher";
+
+/* ==================================================
+Utilities
+================================================== */
+
+@use "utilities/flex-column";
+@use "utilities/full-bleed";
+@use "utilities/visually-hidden";
+
+/* ==================================================
+Blocks
+================================================== */
+
+@use "blocks/button";
+@use "blocks/header-home";
+@use "blocks/header-location";
+@use "blocks/main-home";
+@use "blocks/main-location";
+@use "blocks/footer";
+
+/* ==================================================
+Exceptions
+================================================== */
+
+@use "exceptions/emphasis";
+@use "exceptions/p100";
+
+/* ==================================================
+Global Styles
+================================================== */
+body {
+  overflow-x: hidden;
+  background-color: var(--clr-neutral-100);
+  font-family: var(--ff-body);
+  font-size: var(--step-0);
+  color: var(--clr-neutral-300);
+}
+
+body.home {
+  grid-template-rows: auto 1fr auto;
+}
+
+body.location {
+  grid-template-rows: 1fr auto auto;
+
+  > * + * {
+    margin-block-start: 0;
+  }
+}
+
+:is(h1, h2, h3) {
+  font-family: var(--ff-headings);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: var(--step-6);
+}
+
+h2 {
+  font-size: var(--step-5);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+p {
+  max-inline-size: min(100%, 35ch);
+}
+
+:focus-visible {
+  opacity: 1 !important;
+  outline: 4px solid currentColor;
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: transparent;
+}
