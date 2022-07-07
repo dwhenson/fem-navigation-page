@@ -3,10 +3,9 @@
 
 :root {
   /* Common colors */
-  --clr-primary-100: rgb(213, 150, 108);
-  --clr-neutral-100: rgb(255, 255, 255);
-  --clr-neutral-220: rgb(68, 68, 68);
-  --clr-neutral-300: rgb(21, 21, 21);
+  --clr-neutral-100: hsl(0, 0%, 98%);
+  --clr-neutral-220: hsl(0, 0%, 41%);
+  --clr-neutral-300: hsl(0, 0%, 8%);
 
   /* Spacing */
   --space-xxs: clamp(0.56rem, calc(0.54rem + 0.09vw), 0.63rem);
@@ -18,8 +17,7 @@
   --space-xxl: clamp(4.5rem, calc(4.32rem + 0.75vw), 5rem);
 
   /* Font styles */
-  --ff-headings: "Big Shoulders Display", "Brush Script MT", "cursive";
-  --ff-body: "Outfit", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  --ff-body: "Epilogue", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 
   /* Font sizes */
   --step--1: clamp(0.9rem, calc(0.79rem + 0.45vw), 1.2rem);
@@ -32,7 +30,7 @@
   --step-6: clamp(4.29rem, calc(3.79rem + 2.15vw), 5.72rem);
 
   /* Box shadow */
-  --shadow-color: 68, 68, 68;
+  --shadow-color: 105, 105, 105;
   /* prettier-ignore */
   --shadow-elevation-low:
     0.3px 0.5px 0.8px rgba(var(--shadow-color, 7, 0%, 14%), 0.14),
