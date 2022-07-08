@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  gap: var(--space-xxs, 1rem);
+
+  > * {
+    display: grid;
+    flex-basis: 100%;
+    place-items: center;
+  }
+}

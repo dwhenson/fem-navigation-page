@@ -1,34 +1,14 @@
 .button {
-  --padding-block: 0;
-  --padding-inline: 0;
-
-  display: inline-flex;
   max-inline-size: fit-content;
-  font-family: var(--ff-headings);
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  text-transform: uppercase;
+  border: 2px solid var(--color-bg);
+  border-radius: 1em;
+  transition: background-color 300ms ease-in-out;
+  font-weight: 700;
+  cursor: pointer;
 
-  .text {
-    padding-block: var(--space-xs);
-    padding-inline: var(--space-s);
-    transition: background 300ms ease-in-out;
-  }
-
-  .arrow {
-    display: grid;
-    place-items: center;
-    padding-block: var(--space-xs);
-    padding-inline: var(--space-s);
-    background-color: var(--clr-primary-100);
-    transition: background 300ms ease-in-out;
-  }
-
-  &:hover .text {
-    background-color: var(--clr-primary-100);
-  }
-
-  &:hover .arrow {
-    background-color: var(--color-bg);
+  &:hover {
+    --color-bg: var(--clr-neutral-100);
+    --color-fg: var(--clr-neutral-300);
+    border-color: var(--color-fg);
   }
 }
