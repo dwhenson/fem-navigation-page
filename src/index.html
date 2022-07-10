@@ -94,10 +94,11 @@
 
     <main class="flow-section container has-sidebar">
       <div>
+        <!-- FIXME smaller image not being rendered -->
         <img
           srcset="images/image-hero-mobile.png 750w, images/image-hero-desktop.png 960w"
+          sizes="(max-width: 750px) 100vw, 50vw"
           src="images/image-hero-mobile.png"
-          sizes="(min-width: 800px) 45vw, 96vw"
           alt="A developer working remotely" />
       </div>
       <div class="flow-content">
@@ -107,7 +108,7 @@
           processes, create team rituals, and watch productivity soar.
         </p>
         <a class="[ button ][ box ]" href="/"> Learn more </a>
-        <ul class="flex block-start-spacing" role="list">
+        <ul class="flex" data-state="block-start" role="list">
           <li>
             <svg width="114" height="20" xmlns="http://www.w3.org/2000/svg">
               <path

@@ -80,7 +80,6 @@ img[width][height] {
 img[src$=".svg"] {
   block-size: auto;
   max-inline-size: 100%;
-  max-inline-size: none;
 }
 
 /* Inherit fonts for inputs and buttons */
