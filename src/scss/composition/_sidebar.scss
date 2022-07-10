@@ -6,13 +6,13 @@
   gap: var(--bespoke-gap, var(--space-xxl, 3rem));
 
   > :first-child {
-    flex-basis: var(--side-size, 30rem);
+    flex-basis: var(--side-size, 40%);
     flex-grow: 1;
   }
 
   > :last-child {
     flex-basis: 0;
     flex-grow: 999;
-    min-inline-size: var(--main-size, 30%);
+    min-inline-size: var(--main-size, 30rem);
   }
 }
