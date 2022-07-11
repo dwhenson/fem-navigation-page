@@ -1,6 +1,6 @@
 .box {
-  --color-bg: var(--clr-neutral-300);
-  --color-fg: var(--clr-neutral-100);
+  --color-bg: var(--clr-neutral-100);
+  --color-fg: var(--clr-neutral-300);
 
   padding-block: var(--padding-block, var(--space-xs, 1rem));
   padding-inline: var(--padding-inline, var(--space-m, 1.75rem));

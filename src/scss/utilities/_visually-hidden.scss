@@ -1,0 +1,25 @@
+/* Text accessible only for screen readers */
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.visually-hidden:hover,
+.visually-hidden:active,
+.visually-hidden:focus {
+  position: static;
+  inline-size: auto;
+  block-size: auto;
+  overflow: visible;
+  margin: 0;
+  white-space: normal;
+  clip: auto;
+}

@@ -1,0 +1,9 @@
+header {
+  --padding-block: var(--space-s, 2rem);
+  --padding-inline: 0;
+
+  .logo {
+    display: block;
+    inline-size: 6rem;
+  }
+}

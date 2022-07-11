@@ -1,16 +1,18 @@
 /**
+ * Add CSS fall back dropdown menus
+ */
+/**
  * Initial state, hidden off screen
  */
 .clicky-menu ul {
   position: absolute;
   visibility: hidden;
-  // inset-block-end: 0;
-  // inset-inline-start: 0;
 }
 
 /**
  * No JS fallback
- * Triggers menus on hover rather than click. Supports keyboard navigation in modern browsers.
+ * Triggers menus on hover rather than click.
+ * Supports keyboard navigation in modern browsers.
  */
 .clicky-menu.no-js li:hover > ul,
 .clicky-menu.no-js li:focus-within > ul {

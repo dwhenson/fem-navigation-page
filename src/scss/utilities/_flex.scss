@@ -1,15 +1,7 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-xxs, 1rem);
-
-  > * {
-    display: grid;
-    place-items: center;
-  }
-
-  svg {
-    inline-size: 100%;
-  }
 }

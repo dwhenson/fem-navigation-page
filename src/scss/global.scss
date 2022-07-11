@@ -18,12 +18,16 @@
 
 @use "utilities/flex";
 @use "utilities/icon";
+@use "utilities/skip-link";
 
 /* ==================================================
    Blocks
    ================================================== */
 
+@use "blocks/header";
 @use "blocks/button";
+@use "blocks/burger-icon";
+@use "blocks/navigation";
 @use "blocks/click-menus";
 
 /*  ==================================================
@@ -55,10 +59,6 @@ h1 {
 
 p {
   max-inline-size: min(100%, 60ch);
-}
-
-a[class] {
-  text-decoration: none;
 }
 
 :focus-visible {

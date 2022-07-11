@@ -1,0 +1,67 @@
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+// Handling enabled state
+// Because the burger menu is enabled, we can style up the trigger and the panel.
+
+.burger-menu[enabled="true"] .burger-menu__trigger {
+  position: relative;
+  z-index: 1;
+  display: block;
+  inline-size: 2rem;
+  block-size: 2rem; /* Nice big tap target */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger-menu[enabled="true"] .burger-menu__panel {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  padding-block: 5rem 2rem;
+  padding-inline: 1.5rem;
+  overflow-y: auto;
+  background: var(--color-primary-shade);
+  -webkit-overflow-scrolling: touch;
+}
+
+.burger-menu[enabled="true"] .navigation ul {
+  display: block;
+}
+
+.burger-menu[enabled="true"] .navigation ul > * + * {
+  margin-block-start: 2rem;
+}
+
+.burger-menu[enabled="true"] .navigation li {
+  font-size: 1.5rem;
+}
+
+// The panel’s visibility changed if the burger menu is enabled and the status is open.
+
+.burger-menu[enabled="true"][status="open"] .burger-menu__panel {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.burger-menu[enabled="true"][status="closed"] .burger-menu__panel > * {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+.burger-menu[enabled="true"][status="open"] .burger-menu__panel > * {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 500ms cubic-bezier(0.17, 0.67, 0, 0.87) 700ms,
+    opacity 500ms ease 800ms;
+}

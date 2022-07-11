@@ -1,0 +1,30 @@
+.skip-link {
+  position: absolute;
+  display: inline-block;
+  inset-block-start: 1rem;
+  inset-inline-start: 1rem;
+  padding-block: 0.7rem 0.5rem;
+  padding-inline: 1rem;
+  background: var(--clr-neutral-300, black);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-neutral-100, white);
+}
+
+.skip-link:hover {
+  background: var(--clr-neutral-300, black);
+  color: var(--clr-neutral-100, white);
+}
+
+.skip-link:not(:focus) {
+  position: absolute;
+  inline-size: 1px;
+  block-size: auto;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+}

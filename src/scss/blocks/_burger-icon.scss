@@ -1,0 +1,55 @@
+// Burger menu icon
+.burger-menu__trigger {
+  display: none;
+}
+
+.burger-menu__bar,
+.burger-menu__bar::before,
+.burger-menu__bar::after {
+  position: absolute;
+  display: block;
+  inset-inline-start: 50%;
+  inline-size: 24px;
+  block-size: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-inline-start: -12px;
+  background: black;
+  transition: transform 350ms ease-in-out;
+}
+
+.burger-menu__bar {
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-menu__bar::before,
+.burger-menu__bar::after {
+  content: "";
+}
+
+.burger-menu__bar::before {
+  inset-block-start: -8px;
+}
+
+.burger-menu__bar::after {
+  inset-block-end: -8px;
+}
+
+// Change icon when menu is open
+
+.burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
+  inset-block-start: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu[enabled="true"][status="open"] .burger-menu__bar::after {
+  inset-block-start: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu[enabled="true"][status="open"] .burger-menu__bar {
+  border-color: transparent;
+  background: transparent;
+  transform: rotate(180deg);
+}

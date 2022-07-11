@@ -1,14 +1,17 @@
 .button {
+  --padding-block: var(--space-xxs, 1rem);
+  --padding-inline: var(--space-s, 2rem);
+
   max-inline-size: fit-content;
-  border: 2px solid var(--color-bg);
-  border-radius: 1em;
+  border: 2px solid var(--color-fg);
+  border-radius: 0.75em;
   transition: background-color 300ms ease-in-out;
   font-weight: 700;
   cursor: pointer;
 
   &:hover {
-    --color-bg: var(--clr-neutral-100);
-    --color-fg: var(--clr-neutral-300);
+    --color-bg: var(--clr-neutral-300);
+    --color-fg: var(--clr-neutral-100);
     border-color: var(--color-fg);
   }
 }

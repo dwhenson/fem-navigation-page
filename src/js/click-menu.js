@@ -1,14 +1,14 @@
 /**
  * Object for creating click-triggered navigation submenus
  *
- * Latest version, Issues, etc: https://github.com/mrwweb/clicky-menus
- *
  * Thanks for the inspiration:
  *    - https://www.lottejackson.com/learning/a-reusable-javascript-toggle-pattern
  *    - https://codepen.io/lottejackson/pen/yObQRM
  */
 
 (function () {
+  "use strict";
+
   const ClickyMenus = function (menu) {
     // DOM element(s)
     const container = menu.parentElement;
@@ -21,7 +21,7 @@
       document.addEventListener("click", closeOpenMenu);
     };
 
-    /* = ==================================================
+    /* ===================================================
     =            Menu Open / Close Functions            =
     =================================================== */
     function toggleOnMenuClick(e) {
@@ -80,12 +80,12 @@
     }
 
     function closeOpenMenu(e) {
-      if (currentMenuItem && !e.target.closest(`#${container.id}`)) {
+      if (currentMenuItem && !e.target.closest("#" + container.id)) {
         toggleSubmenu(currentMenuItem);
       }
     }
 
-    /* = ==========================================================
+    /* ===========================================================
     =            Modify Menu Markup & Bind Listeners            =
     ============================================================= */
     function menuSetup() {
@@ -116,7 +116,7 @@
       const button = document.createElement("button");
 
       if (link !== null) {
-        // set button content and attributes
+        // copy button attributes and content from link
         button.innerHTML = linkHTML.trim();
         for (index = 0, length_ = linkAtts.length; index < length_; index++) {
           const attribute = linkAtts[index];
@@ -137,8 +137,8 @@
       let id;
       id =
         submenuId === null
-          ? `${button.textContent.trim().replace(/\s+/g, "-").toLowerCase()}-submenu`
-          : `${menuItemId}-submenu`;
+          ? button.textContent.trim().replace(/\s+/g, "-").toLowerCase() + "-submenu"
+          : menuItemId + "-submenu";
 
       // set button ARIA
       button.setAttribute("aria-controls", id);
@@ -160,5 +160,3 @@
     }
   });
 })();
-
-console.log("works");
