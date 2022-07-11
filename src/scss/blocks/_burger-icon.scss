@@ -11,11 +11,11 @@
   inset-inline-start: 50%;
   inline-size: 24px;
   block-size: 3px;
-  border: 1px solid black;
+  border: 1px solid var(--clr-neutral-300);
   border-radius: 3px;
   margin-inline-start: -12px;
-  background: black;
-  transition: transform 350ms ease-in-out;
+  background: var(--clr-neutral-300);
+  transition: transform 300ms ease-in-out;
 }
 
 .burger-menu__bar {
