@@ -55,10 +55,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
+// Remove underlines from links with a class or in a nav
+a[class],
+nav a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */

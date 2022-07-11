@@ -1,8 +1,31 @@
-.navigation ul {
+.navigation > ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: var(--space-l, 2rem);
+
+  a {
+    display: block;
+  }
+}
+
+// Drop-down menu style and positioning
+button[aria-controls] {
+  border: 0;
+  background-color: var(--clr-neutral-100);
+  cursor: pointer;
+}
+
+.clicky-menu ul {
+  --padding-block: var(--space-xs, 2rem);
+  --padding-inline: var(--space-s, 2rem);
+  --flow-space: var(--space-xxs, 0.25rem);
+
+  position: absolute;
+  visibility: hidden;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-elevation-medium);
+  transform: translateX(calc(var(--space-xs, 0.25rem) * -1));
 }
 
 // Handling enabled state
@@ -13,8 +36,8 @@
   z-index: 1;
   display: block;
   inline-size: 2rem;
-  block-size: 2rem; /* Nice big tap target */
-  border: none;
+  block-size: 2rem;
+  border: 0;
   background: transparent;
   cursor: pointer;
 }
