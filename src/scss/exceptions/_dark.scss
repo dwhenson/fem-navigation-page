@@ -1,0 +1,10 @@
+[data-state="dark"] {
+  --color-bg: var(--clr-neutral-300);
+  --color-fg: var(--clr-neutral-100);
+
+  &:hover {
+    --color-bg: var(--clr-neutral-100);
+    --color-fg: var(--clr-neutral-300);
+    border-color: var(--color-fg);
+  }
+}

@@ -4,8 +4,16 @@
   align-items: center;
   gap: var(--space-l, 2rem);
 
+  button,
   a {
     display: block;
+    color: var(--clr-neutral-200);
+  }
+
+  button:hover,
+  a:hover,
+  .button:hover a {
+    color: var(--clr-neutral-300);
   }
 }
 

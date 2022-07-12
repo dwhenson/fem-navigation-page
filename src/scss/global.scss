@@ -35,6 +35,7 @@
     ================================================== */
 
 @use "exceptions/block-start";
+@use "exceptions/dark";
 
 /*  ==================================================
     Global Styles
@@ -45,7 +46,7 @@ body {
   background-color: var(--clr-neutral-100);
   font-family: var(--ff-body);
   font-size: var(--step--1);
-  color: var(--clr-neutral-300);
+  color: var(--clr-neutral-200);
 }
 
 main {
@@ -55,6 +56,7 @@ main {
 
 h1 {
   font-size: var(--step-5);
+  color: var(--clr-neutral-300);
 }
 
 p {
@@ -63,7 +65,7 @@ p {
 
 :focus-visible {
   opacity: 1 !important;
-  outline: 4px solid currentColor;
+  outline: 4px solid #726cee;
   outline-offset: 4px;
 }
 

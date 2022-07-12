@@ -6,12 +6,11 @@
   border: 2px solid var(--color-fg);
   border-radius: 0.75em;
   transition: background-color 300ms ease-in-out;
-  font-weight: 700;
   cursor: pointer;
 
   &:hover {
-    --color-bg: var(--clr-neutral-300);
-    --color-fg: var(--clr-neutral-100);
+    --color-bg: var(--clr-neutral-100);
+    --color-fg: var(--clr-neutral-300);
     border-color: var(--color-fg);
   }
 }
