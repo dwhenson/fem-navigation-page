@@ -1,9 +1,5 @@
 header {
   --padding-block: var(--space-m, 2rem);
   --padding-inline: 0;
-
-  .logo {
-    display: block;
-    inline-size: 6rem;
-  }
+  --bespoke-gap: var(--space-xxl);
 }

@@ -5,9 +5,6 @@
 
 .has-icon {
   display: flex;
-  align-items: baseline;
-}
-
-.has-icon .icon {
-  margin-inline-end: var(--inline-margin, 0.75em);
+  align-items: center;
+  gap: 0.5em;
 }
