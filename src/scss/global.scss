@@ -1,5 +1,6 @@
 @use "reset";
 @use "abstracts/variables";
+@use "abstracts/breakpoints" as *;
 
 /* ==================================================
   Composition
@@ -27,6 +28,7 @@
 @use "blocks/header";
 @use "blocks/button";
 @use "blocks/burger-icon";
+@use "blocks/burger-menu";
 @use "blocks/navigation";
 @use "blocks/click-menus";
 
@@ -52,6 +54,19 @@ body {
 main {
   align-self: center;
   margin-block-end: var(--flow-section, var(--space-xxl, 3rem));
+  text-align: center;
+
+  @include respond-to("small") {
+    text-align: start;
+  }
+
+  .button {
+    align-self: center;
+
+    @include respond-to("small") {
+      align-self: flex-start;
+    }
+  }
 }
 
 h1 {
@@ -65,7 +80,7 @@ p {
 
 :focus-visible {
   opacity: 1 !important;
-  outline: 4px solid #726cee;
+  outline: 4px solid hsl(242.77, 79.268%, 67.843%);
   outline-offset: 4px;
 }
 

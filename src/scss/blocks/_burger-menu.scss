@@ -1,0 +1,52 @@
+// Adjust position for login and register mobile navigation
+.burger-menu[enabled="true"] .login,
+.burger-menu[enabled="true"] .button {
+  flex-grow: 1;
+  max-inline-size: 100%;
+  text-align: center;
+}
+
+// Handling enabled state
+// Burger menu is enabled => style up the trigger and the panel.
+.burger-menu[enabled="true"] .burger-menu__trigger {
+  position: relative;
+  z-index: 1;
+  display: block;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger-menu[enabled="true"] .burger-menu__panel {
+  position: fixed;
+  visibility: hidden;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inline-size: 60vw;
+  block-size: 100%;
+  padding-block: calc(var(--space-xxl, 5rem) * 1.5);
+  padding-inline: var(--space-s, 1.5rem);
+  box-shadow: 0 0 0 100vw hsl(0, 0%, 8%, 0);
+  overflow-y: auto;
+  background-color: var(--clr-neutral-100);
+  transform: translateX(60vw);
+  transition: all 250ms ease-in;
+}
+
+.burger-menu[enabled="true"] .navigation ul {
+  display: block;
+}
+
+.burger-menu[enabled="true"] .navigation ul > * + * {
+  margin-block-start: var(--space-m, 1.5rem);
+}
+
+// Panel visibile if burger menu enabled and the status is open.
+.burger-menu[enabled="true"][status="open"] .burger-menu__panel {
+  visibility: visible;
+  box-shadow: 0 0 0 100vw hsl(0, 0%, 8%, 0.7);
+  transform: translateX(0);
+  transition: all 250ms ease-out;
+}

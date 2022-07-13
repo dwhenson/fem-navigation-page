@@ -1,3 +1,32 @@
+// Desktop drop-down menu style and positioning
+button[aria-controls] {
+  border: 0;
+  background-color: var(--clr-neutral-100);
+  cursor: pointer;
+}
+
+.clicky-menu ul {
+  --padding-block: var(--space-xs, 2rem);
+  --padding-inline: var(--space-s, 2rem);
+  --flow-space: var(--space-xxs, 0.25rem);
+
+  position: absolute;
+  visibility: hidden;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-elevation-medium);
+
+  .has-icon {
+    align-items: baseline;
+  }
+}
+
+// Position mobile drop-down in flow
+.burger-menu[enabled="true"] .clicky-menu ul[aria-hidden="false"] {
+  position: static;
+  visibility: visible;
+  box-shadow: none;
+}
+
 /**
  * No JS fallback
  * Triggers menus on hover rather than click.

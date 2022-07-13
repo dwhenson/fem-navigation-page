@@ -1,7 +1,9 @@
 .flex {
+  --bespoke-gap: var(--space-s);
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: var(--bespoke-gap, 1rem);
 }
