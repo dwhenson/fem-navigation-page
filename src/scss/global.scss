@@ -56,14 +56,14 @@ main {
   margin-block-end: var(--flow-section, var(--space-xxl, 3rem));
   text-align: center;
 
-  @include respond-to("small") {
+  @include respond-to("medium") {
     text-align: start;
   }
 
   .button {
     align-self: center;
 
-    @include respond-to("small") {
+    @include respond-to("medium") {
       align-self: flex-start;
     }
   }
@@ -72,10 +72,6 @@ main {
 h1 {
   font-size: var(--step-5);
   color: var(--clr-neutral-300);
-}
-
-p {
-  max-inline-size: min(100%, 60ch);
 }
 
 :focus-visible {

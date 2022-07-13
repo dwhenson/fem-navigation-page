@@ -1,5 +1,3 @@
-/* Add vertical rhythm between sections */
-
 :where(body, .flow-section) > * + * {
-  margin-block-start: var(--flow-section, var(--space-xl, 3rem));
+  margin-block-start: var(--flow-section, max(4vh, var(--space-m, 2rem)));
 }
