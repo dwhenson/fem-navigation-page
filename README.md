@@ -1,6 +1,6 @@
 # Frontend Mentor - Suite landing page
 
-![Design preview for the navigation challenge coding challenge](images/preview.jpg)
+![Design preview for the navigation challenge coding challenge](images/desktop-preview.jpg)
 
 XXX
 
