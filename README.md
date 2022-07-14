@@ -1,6 +1,6 @@
 # Progressively enhanced, accessable, dropdown menus and burger menu
 
-![Design preview for the navigation challenge coding challenge](images/desktop-preview.jpg)
+![Design preview for the navigation challenge coding challenge](src/images/desktop-preview.jpg)
 
 Honestly, I don't like dropdown menus or burger menus, so I had to view this as a challenge. Getting both to work without Javascript has been a challenge. The result is OK, but not perfect, if JS fails the dropdowns will activate on hover, and navigation items will wrap, remaining visible, instead of being hidden by the burger-menu.
 
