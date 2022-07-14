@@ -9,11 +9,9 @@
 // Handling enabled state
 // Burger menu is enabled => style up the trigger and the panel.
 .burger-menu[enabled="true"] .burger-menu__trigger {
-  position: fixed;
+  position: relative;
   z-index: 1;
   display: block;
-  inset-block-start: calc(var(--space-m, 2rem) - 3px);
-  inset-inline-end: 1rem;
   inline-size: 2rem;
   block-size: 2rem;
   border: 0;
@@ -51,4 +49,10 @@
   box-shadow: 0 0 0 100vw hsl(0, 0%, 8%, 0.7);
   transform: translateX(0);
   transition: all 250ms ease-out;
+}
+
+.burger-menu[enabled="true"][status="open"] .burger-menu__trigger {
+  position: fixed;
+  inset-block-start: calc(var(--space-m, 2rem) - 3px);
+  inset-inline-end: 1rem;
 }
