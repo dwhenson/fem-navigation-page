@@ -1,4 +1,4 @@
-# Progressively enhanced, accessable, dropdown menus and burger menu
+# Progressively enhanced, accessible, dropdown menus and burger menu
 
 ![Design preview for the navigation challenge coding challenge](src/images/desktop-preview.jpg)
 
