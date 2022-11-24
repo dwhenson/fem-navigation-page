@@ -6,7 +6,7 @@ Honestly, I don't like dropdown menus or burger menus, so I had to view this as 
 
 I'm still working on an intrinsic design approach, and the only breakpoint in the page is to left align the `main` content at larger viewports. I'm getting much more comfortable with this approach now, and I feel like its a lovely way to build a page. The main advantage is that it relegates breakpoints to minor tweaks rather than massive layout shifts.
 
-![Design preview for the navigation challenge coding challenge](./images/desktop-preview.jpg)
+![Design preview for the navigation challenge coding challenge](./src/images/desktop-preview.jpg)
 
 ## Overview
 
@@ -37,8 +37,8 @@ I struggled to get the images responding nicely using `srcset`. Then someone sug
 
 ### Resources
 
-- 🔗 For the click/hover menus I used [this great resource](https://github.com/mrwweb/clicky-menus), which although a little complicated is really solid once you get the hang of things.
-- 🔗 For the burger menu I used [Andy Bell's fully-responsive, progressively enhanced burger menu](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/). The link provides a very thorough and in-depth guide to building one.
+- For the click/hover menus I used [this great resource](https://github.com/mrwweb/clicky-menus), which although a little complicated is really solid once you get the hang of things.
+- For the burger menu I used [Andy Bell's fully-responsive, progressively enhanced burger menu](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/). The link provides a very thorough and in-depth guide to building one.
 
 ## Author
 
