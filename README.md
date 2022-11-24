@@ -1,12 +1,12 @@
-# Intro section with dropdown navigation
+# Progressively enhanced, accessible, dropdown menus and burger-menu
 
-This is a solution to the [Art gallery website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges are designed to help developers improve their coding skills by building realistic projects. Assets are provided, but no guidance, and developers are free to choose any approach to solving the challenge.
+This is a solution to the [intro section with dropdown navigation website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges are designed to help developers improve their coding skills by building realistic projects. Assets are provided, but no guidance, and developers are free to choose any approach to solving the challenge.
 
 Honestly, I don't like dropdown menus or burger menus, so I had to view this as a challenge. Getting both to work without Javascript has been a challenge. The result is OK, but not perfect, if JS fails the dropdowns will activate on hover, and navigation items will wrap, remaining visible, instead of being hidden by the burger-menu.
 
 I'm still working on an intrinsic design approach, and the only breakpoint in the page is to left align the `main` content at larger viewports. I'm getting much more comfortable with this approach now, and I feel like its a lovely way to build a page. The main advantage is that it relegates breakpoints to minor tweaks rather than massive layout shifts.
 
-![Design preview for the navigation challenge coding challenge](images/desktop-preview.jpg)
+![Design preview for the navigation challenge coding challenge](./images/desktop-preview.jpg)
 
 ## Overview
 
